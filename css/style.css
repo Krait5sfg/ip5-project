@@ -245,6 +245,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 374px;
   background-color: #ffffff;
 }
 .type-marketplace .type-marketplace-title {
@@ -326,40 +327,48 @@ body {
 .type-marketplace .type-marketplace-list-item-four {
   background-image: url("../img/price-agregator.png");
 }
-.type-marketplace .type-marketplace-who-work {
+
+.who-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f8fd;
+}
+.who-work .who-work-title {
   padding: 0;
   margin: 0;
-  margin-top: 82px;
+  margin-top: 55px;
   font-family: "Lato-Bold", "Arial Black", sans-serif;
   font-size: 28px;
   line-height: 32px;
   color: #3c434d;
   text-align: center;
 }
-.type-marketplace .who-work-slider {
+.who-work .who-work-slider {
   display: flex;
   margin-top: 54px;
   width: 977px;
 }
-.type-marketplace .who-work-slide-list {
+.who-work .who-work-slide-list {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.type-marketplace .who-work-slide-list-item {
+.who-work .who-work-slide-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 190px;
   height: 100px;
-  outline: 1px solid black;
+  box-shadow: 0px 8px 20px 0 rgba(33, 33, 33, 0.1);
+  background-color: #ffffff;
 }
-.type-marketplace .who-work-slide-list-item:not(:last-child) {
+.who-work .who-work-slide-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.type-marketplace .who-work-slide-description {
-  margin-top: 50px;
+.who-work .who-work-description {
+  margin-top: 43px;
   max-width: 944px;
   font-family: "Lato-Regular", "Arial", sans-serif;
   font-size: 18px;
