@@ -69,7 +69,7 @@
 
                 <div class="testimonials-slider-button-left"></div>
 
-                <div class="slider-item">
+                <div class="slider-item  testimonials-slide-one" data-info="1">
                     <div class="slider-item-img-block">
                         <img src="img/bezoz.png" alt="Джеф Безос" width="70" height="70">
                         <p class="slider-item-family">Джеф Безос</p>
@@ -82,6 +82,30 @@
                         готовы
                         были рискнуть. Наверное, поэтому мы первыми открыли свой сайт для миллионов малых предприятий,
                         производителей, бизнесменов и ритейлеров. Мы увидели перспективу в маркетплейсе и не проиграли.
+                    </div>
+                </div>
+
+                <div class="slider-item  testimonials-slide-two hidden" data-info="2">
+                    <div class="slider-item-img-block">
+                        <img src="img/kirigetov.png" alt="Роман Киригетов" width="70" height="70">
+                        <p class="slider-item-family">Роман Киригетов</p>
+                        <p class="slider-item-work">Сооснователь Kabanchik и Crafta</p>
+                    </div>
+                    <div class="slider-item-testimony kirigetov-testimony">
+                        В 2020 году глобальные маркетплейсы займут 40 % рынка электронной коммерции. Самое время
+                        запускать
+                        свой маркетплейс!
+                    </div>
+                </div>
+
+                <div class="slider-item  testimonials-slide-three hidden" data-info="3">
+                    <div class="slider-item-img-block">
+                        <img src="img/hartman.png" alt="Оскар Хартманн" width="70" height="70">
+                        <p class="slider-item-family">Оскар Хартманн</p>
+                        <p class="slider-item-work">Миллиардер, основатель KupiVip</p>
+                    </div>
+                    <div class="slider-item-testimony hartman-testimony">
+                        Маркетплейс самая лучшая бизнес модель в мире.
                     </div>
                 </div>
 
@@ -98,19 +122,19 @@
             <p class="type-marketplace-title">Какие модели маркетплейсов бывают?</p>
 
             <ul class="type-marketplace-list">
-                <li class="type-marketplace-list-item current-marketplace-list">
+                <li class="type-marketplace-list-item current-marketplace-list" data-info="c2c">
                     <div class="type-marketplace-list-item-one"></div>
                     <span class="type-marketplace-list-item-title">С2С MarketPlace</span>
                 </li>
-                <li class="type-marketplace-list-item">
+                <li class="type-marketplace-list-item" data-info="b2c">
                     <div class="type-marketplace-list-item-two"></div>
                     <span class="type-marketplace-list-item-title">B2С MarketPlace</span>
                 </li>
-                <li class="type-marketplace-list-item">
+                <li class="type-marketplace-list-item" data-info="b2b">
                     <div class="type-marketplace-list-item-three"></div>
                     <span class="type-marketplace-list-item-title">B2B MarketPlace</span>
                 </li>
-                <li class="type-marketplace-list-item">
+                <li class="type-marketplace-list-item" data-info="agregator">
                     <div class="type-marketplace-list-item-four"></div>
                     <span class="type-marketplace-list-item-title">Прайс-агрегатор</span>
                 </li>
@@ -124,25 +148,103 @@
 
             <p class="who-work-title">По этой модели работают</p>
 
-            <div class="who-work-slider">
+            <div class="who-work-slider" data-info="c2c">
 
                 <button class="who-wokr-slider-button-left" aria-label="Кнопка влево"></button>
 
                 <ul class="who-work-slide-list">
                     <li class="who-work-slide-list-item"><img src="img/brands/1/avito.svg" alt="Логотип Avito"></li>
-                    <li class="who-work-slide-list-item"><img src="img/brands/1/olx.svg" alt="Логотип Olx"></li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/1/olx.svg" alt="Логотип Olx">
+                    </li>
                     <li class="who-work-slide-list-item"><img src="img/brands/1/yula.svg" alt="Логотип Юла"></li>
                     <li class="who-work-slide-list-item"><img src="img/brands/1/youdo.svg" alt="Логотип Yod do"></li>
+                    <li class="who-work-slide-list-item visually-hidden"><img src="img/brands/1/etsy.svg"
+                            alt="Логотип Etsy"></li>
+                    <li class="who-work-slide-list-item visually-hidden"><img src="img/brands/1/craig.svg"
+                            alt="Логотип Craig"></li>
+                    <li class="who-work-slide-list-item visually-hidden"><img src="img/brands/1/upwork.svg"
+                            alt="Логотип Upwork"></li>
                 </ul>
 
                 <button class="who-wokr-slider-button-right" aria-label="Кнопка вправо"></button>
 
             </div>
 
-            <div class="who-work-description">
+            <div class="who-work-slider hidden" data-info="b2c">
+
+                <button class="who-wokr-slider-button-left" aria-label="Кнопка влево"></button>
+
+                <ul class="who-work-slide-list">
+                    <li class="who-work-slide-list-item"><img src="img/brands/2/aliexpress.svg"
+                            alt="Логотип Aliexpress">
+                    </li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/2/amazon.svg" alt="Логотип Amazon"></li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/2/beru.ru.svg" alt="Логотип Beru"></li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/2/booking.svg" alt="Логотип Booking">
+                    </li>
+                </ul>
+
+                <button class="who-wokr-slider-button-right" aria-label="Кнопка вправо"></button>
+
+            </div>
+
+            <div class="who-work-slider hidden" data-info="b2b">
+
+                <button class="who-wokr-slider-button-left" aria-label="Кнопка влево"></button>
+
+                <ul class="who-work-slide-list">
+                    <li class="who-work-slide-list-item"><img src="img/brands/3/alibaba.svg" alt="Логотип Alibaba"></li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/3/booking-b2b.svg" alt="Логотип Booking">
+                    </li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/3/capterra.svg" alt="Логотип Capterra">
+                    </li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/3/indiamart.svg" alt="Логотип Indiamart">
+                    </li>
+                </ul>
+
+                <button class="who-wokr-slider-button-right" aria-label="Кнопка вправо"></button>
+
+            </div>
+
+            <div class="who-work-slider hidden" data-info="agregator">
+
+                <button class="who-wokr-slider-button-left" aria-label="Кнопка влево"></button>
+
+                <ul class="who-work-slide-list">
+                    <li class="who-work-slide-list-item"><img src="img/brands/4/yandexmarket.svg"
+                            alt="Логотип Яндекс-маркет">
+                    </li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/4/ecatalog.svg" alt="Логотип Ecatalog">
+                    </li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/4/hotline.svg" alt="Логотип Hotline"></li>
+                    <li class="who-work-slide-list-item"><img src="img/brands/4/onliner.svg" alt="Логотип Onliner"></li>
+                </ul>
+
+                <button class="who-wokr-slider-button-right" aria-label="Кнопка вправо"></button>
+
+            </div>
+
+            <div class="who-work-description" data-info="c2c">
                 С2С маркетплейсы выстраиваются по приниципу, где все участники равны. Пользователи, которые
                 собираются на платформе, не являются предпринимателями. Они похожи по интересам, достатку, возрасту
                 и заходят на маркетплейс, чтобы поделиться чем-то.
+            </div>
+
+            <div class="who-work-description hidden" data-info="b2c">
+                Розничный Маркетплейс для конечных покупателей, самый классический пример такого проекта. Ядро такого
+                проекта, не очень большая часть - это товары самого маркетплейса, большая часть товаров - это товары
+                мелких, средних и крупных оптовиков и производителей. Эту схему придумал Amazon.com, он же и является
+                самым крупным классическим маркетплейсом.
+            </div>
+
+            <div class="who-work-description hidden" data-info="b2b">
+                Открытый для всех оптовых покупателей проект, который охватывает любые товарные разделы. В первую
+                очередь в нем выставляются производители товара.<br>Классический пример такого типа &#8212; Alibaba.com.
+            </div>
+
+            <div class="who-work-description hidden" data-info="agregator">
+                Собирает, группирует товары и цены на них из разных источников, объединяет данные из нескольких
+                источников в один с единым пользовательским интерфейсом.<br>Классический пример &#8212; Яндекс-маркет.
             </div>
 
         </section>
@@ -154,6 +256,7 @@
             <div class="marketplace-ability-list">
 
                 <div class="marketplace-ability-list-item">
+                    <div class="first-ability-img"></div>
                     <p class="marketplace-ability-list-item-title">
                         Удобный поиск по каталогу.
                     </p>
@@ -165,6 +268,7 @@
                 </div>
 
                 <div class="marketplace-ability-list-item">
+                    <div class="second-ability-img"></div>
                     <p class="marketplace-ability-list-item-title">
                         Статистика по товарам.
                     </p>
@@ -176,6 +280,7 @@
                 </div>
 
                 <div class="marketplace-ability-list-item">
+                    <div class="third-ability-img"></div>
                     <p class="marketplace-ability-list-item-title">
                         Эксклюзивная логика фильтров.
                     </p>
@@ -187,6 +292,7 @@
                 </div>
 
                 <div class="marketplace-ability-list-item">
+                    <div class="fourth-ability-img"></div>
                     <p class="marketplace-ability-list-item-title">
                         Быстрая коммуникация.
                     </p>
@@ -198,6 +304,7 @@
                 </div>
 
                 <div class="marketplace-ability-list-item">
+                    <div class="fifth-ability-img"></div>
                     <p class="marketplace-ability-list-item-title">
                         Большой выбор вариантов загрузки предложений.
                     </p>
@@ -213,7 +320,7 @@
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -286,6 +286,13 @@ body {
         background-image: url("../img/quote-image.png")
     }
 
+    .kirigetov-testimony, 
+    .hartman-testimony {
+        font-family: $lato-bold;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
 }
 
 .type-marketplace {
@@ -419,10 +426,12 @@ body {
     }
     
     .who-work-slider {
+        position: relative;
+
         display: flex;
         align-items: center;
         margin-top: 54px;
-        width: 950px;
+        width: 851px;
     }
     
     .who-work-slide-list {
@@ -450,22 +459,30 @@ body {
 
     .who-wokr-slider-button-left,
     .who-wokr-slider-button-right {
+        position: absolute;
+
         width: 10px;
         height: 16px;
 
+        transform: translateY(-50%);
+        background: transparent;
         background-repeat: no-repeat;
         border: none;
         cursor: pointer;
     }
 
     .who-wokr-slider-button-left {
+        top: 50%;
+        left: -9%;
+        
         background-image: url("../img/left-icon.png");
-        margin-right: 47px;
     }
 
     .who-wokr-slider-button-right {
+        top: 50%;
+        right: -9%;
+
         background-image: url("../img/right-icon.png");
-        margin-left: 47px;
     }
 
     .who-work-description {
@@ -481,13 +498,26 @@ body {
 }
 
 .marketplace-ability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-color: #f3f8fd;
     border-top: 1px solid #f3f8fd;
+
+    .marketplace-ability-list {
+        // max-width: 1190px;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 107px;
+    }
 
     .marketplace-ability-title {
         padding: 0;
         margin: 0;
-        margin-top: 136px;
+        margin-top: 125px;
 
         font-family: $lato-bold;
         font-size: 34px;
@@ -496,13 +526,21 @@ body {
     }
 
     .marketplace-ability-list-item {
+        position: relative;
+
         width: 365px;
+        margin-right: 30px;
+        margin-bottom: 90px;
     }
 
     .marketplace-ability-list-item-title,
     .marketplace-ability-list-item-description {
         padding: 0;
         margin: 0;
+    }
+
+    .marketplace-ability-list-item-title {
+        margin-top: 20px;
     }
 
     .marketplace-ability-list-item-title {
@@ -520,4 +558,88 @@ body {
         text-align: left;
     }
 
+    .first-ability-img {
+        width: 94px;
+        height: 90px;
+
+        background-image: url("../img/first-ability-img.png");
+    }
+
+    .second-ability-img {
+        width: 98px;
+        height: 90px;
+
+        background-image: url("../img/second-ability-img.png");
+    }
+
+    .third-ability-img {
+        width: 85px;
+        height: 90px;
+
+        background-image: url("../img/third-ability-img.png");
+    }
+
+    .fourth-ability-img {
+        width: 93px;
+        height: 90px;
+
+        background-image: url("../img/fourth-ability-img.png");
+    }
+
+    .fifth-ability-img {
+        width: 96px;
+        height: 90px;
+
+        background-image: url("../img/fifth-ability-img.png");
+    }
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media only screen and (max-width : 1200px) {
+    
+    .header {
+        .main-navigation {
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-logo,
+        .main-menu {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+   
+}
+
+@media only screen and (max-width : 1100px) {
+    
+    .type-marketplace {
+
+        .type-marketplace-list-item:nth-child(1n) {
+            margin: 20px;
+        }
+
+    }
+
+    .who-work {
+        .who-wokr-slider-button-left {
+            left: -4%;
+        }
+        .who-wokr-slider-button-right {
+            right: -4%;
+        }
+    }
+
+    .marketplace-ability {
+
+        .marketplace-ability-list-item {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+    }
 }

@@ -239,6 +239,12 @@ body {
   height: 15px;
   background-image: url("../img/quote-image.png");
 }
+.testimonials .kirigetov-testimony,
+.testimonials .hartman-testimony {
+  font-family: "Lato-Bold", "Arial Black", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
 
 .type-marketplace {
   display: flex;
@@ -345,10 +351,11 @@ body {
   text-align: center;
 }
 .who-work .who-work-slider {
+  position: relative;
   display: flex;
   align-items: center;
   margin-top: 54px;
-  width: 950px;
+  width: 851px;
 }
 .who-work .who-work-slide-list {
   display: flex;
@@ -370,19 +377,24 @@ body {
 }
 .who-work .who-wokr-slider-button-left,
 .who-work .who-wokr-slider-button-right {
+  position: absolute;
   width: 10px;
   height: 16px;
+  transform: translateY(-50%);
+  background: transparent;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 .who-work .who-wokr-slider-button-left {
+  top: 50%;
+  left: -9%;
   background-image: url("../img/left-icon.png");
-  margin-right: 47px;
 }
 .who-work .who-wokr-slider-button-right {
+  top: 50%;
+  right: -9%;
   background-image: url("../img/right-icon.png");
-  margin-left: 47px;
 }
 .who-work .who-work-description {
   margin-top: 43px;
@@ -395,25 +407,41 @@ body {
 }
 
 .marketplace-ability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f3f8fd;
   border-top: 1px solid #f3f8fd;
+}
+.marketplace-ability .marketplace-ability-list {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 107px;
 }
 .marketplace-ability .marketplace-ability-title {
   padding: 0;
   margin: 0;
-  margin-top: 136px;
+  margin-top: 125px;
   font-family: "Lato-Bold", "Arial Black", sans-serif;
   font-size: 34px;
   color: #212121;
   text-align: center;
 }
 .marketplace-ability .marketplace-ability-list-item {
+  position: relative;
   width: 365px;
+  margin-right: 30px;
+  margin-bottom: 90px;
 }
 .marketplace-ability .marketplace-ability-list-item-title,
 .marketplace-ability .marketplace-ability-list-item-description {
   padding: 0;
   margin: 0;
+}
+.marketplace-ability .marketplace-ability-list-item-title {
+  margin-top: 20px;
 }
 .marketplace-ability .marketplace-ability-list-item-title {
   font-family: "Lato-Bold", "Arial Black", sans-serif;
@@ -427,6 +455,64 @@ body {
   line-height: 24px;
   color: #3c434d;
   text-align: left;
+}
+.marketplace-ability .first-ability-img {
+  width: 94px;
+  height: 90px;
+  background-image: url("../img/first-ability-img.png");
+}
+.marketplace-ability .second-ability-img {
+  width: 98px;
+  height: 90px;
+  background-image: url("../img/second-ability-img.png");
+}
+.marketplace-ability .third-ability-img {
+  width: 85px;
+  height: 90px;
+  background-image: url("../img/third-ability-img.png");
+}
+.marketplace-ability .fourth-ability-img {
+  width: 93px;
+  height: 90px;
+  background-image: url("../img/fourth-ability-img.png");
+}
+.marketplace-ability .fifth-ability-img {
+  width: 96px;
+  height: 90px;
+  background-image: url("../img/fifth-ability-img.png");
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header .main-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .header-logo,
+.header .main-menu {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .type-marketplace .type-marketplace-list-item:nth-child(1n) {
+    margin: 20px;
+  }
+
+  .who-work .who-wokr-slider-button-left {
+    left: -4%;
+  }
+  .who-work .who-wokr-slider-button-right {
+    right: -4%;
+  }
+
+  .marketplace-ability .marketplace-ability-list-item {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
